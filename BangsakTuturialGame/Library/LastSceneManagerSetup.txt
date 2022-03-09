@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/BangsakGame.unity
+- path: Assets/Scenes/TutorialMode.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

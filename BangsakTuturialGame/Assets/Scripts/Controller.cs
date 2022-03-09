@@ -13,6 +13,8 @@ public class Controller : MonoBehaviour
     private float jumpheight = 1f;
     public LayerMask groundMask;
     Vector3 velocity;
+
+
     bool isGrounded;
     void Start()
     {
@@ -87,6 +89,7 @@ public class Controller : MonoBehaviour
                 else if(Input.GetKey (KeyCode.S)){
                     velocity *= 1f;
                 } 
+                
             }
             
         }   

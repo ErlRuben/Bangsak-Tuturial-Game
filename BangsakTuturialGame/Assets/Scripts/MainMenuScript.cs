@@ -20,7 +20,7 @@ public class MainMenuScript : MonoBehaviour
     }
     public void StartGame(){
         //When Pressed Start
-        SceneManager.LoadScene("Test");
+        SceneManager.LoadScene("TutorialMode");
     }
     public void ExitGame(){
         //When Pressed Quit
@@ -41,5 +41,14 @@ public class MainMenuScript : MonoBehaviour
     }
     public void ClickSound(){
         ClickSFX.PlayOneShot(ClickFx);
+    }
+    public void ReturnMenu(){
+        SceneManager.LoadScene("Menu");
+    }
+    public void DoneTutorial(){
+        SceneManager.LoadScene("Bangsak");
+    }
+    public void DoneBangsak(){
+        SceneManager.LoadScene("Patintero");
     }
 }
