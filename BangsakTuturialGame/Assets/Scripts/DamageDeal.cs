@@ -16,13 +16,13 @@ public class DamageDeal : MonoBehaviour
     public GameObject WarningUI;
     public GameObject LocationNew;
     public GameObject AISeeker;
-
+    public bool isDown = false;
     public void OnTriggerEnter(Collider other) {
         if(other.tag == "Bullet"){
             StartCoroutine(IntroOfSeeker());
             Destroy(other.GetComponent<BoxCollider>());
             WarningUI.SetActive(false);
-
+            isDown = true;
         }
         else if(other.tag == "Player"){
             PlayerCharacter.GetComponent<Controller>().enabled = false;
@@ -31,6 +31,9 @@ public class DamageDeal : MonoBehaviour
             UIRetry.SetActive(true);
             PlayerCharacter.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
+        }
+        else if(isDown == true){
+            WarningUI.SetActive(true);
         }
         
     }
