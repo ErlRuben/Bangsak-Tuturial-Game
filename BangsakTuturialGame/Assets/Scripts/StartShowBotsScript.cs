@@ -7,8 +7,10 @@ public class StartShowBotsScript : MonoBehaviour
     public GameObject TalkSummonAI;
     public GameObject MouseUnlock;
     public GameObject player;
-    public GameObject AIAgent;
     public GameObject camera;
+    public GameObject AIAgent;
+    public GameObject Gun;
+    public GameObject LocationNew;
     public Transform playerLook;
     public Transform AIposition1;
     public Transform AIposition2;
@@ -23,13 +25,15 @@ public class StartShowBotsScript : MonoBehaviour
             camera.GetComponent<MouseLook>().enabled = false;
             player.transform.LookAt(Companion);
             stoplook = true;
-            BotAnim.enabled = !BotAnim.enabled;
+            player.transform.position = LocationNew.transform.position;
+            player.transform.rotation = LocationNew.transform.rotation;
         }
     }
     public void PressedSummonHider(){
         lookBool = true;
         if(lookBool == true){
             StartCoroutine(WaitBotKill());
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
     IEnumerator DelayShowCollider(){
@@ -38,7 +42,9 @@ public class StartShowBotsScript : MonoBehaviour
         MouseUnlock.SetActive(true);
     }
     IEnumerator WaitBotKill(){
+        player.transform.LookAt(Companion);
         yield return new WaitForSeconds(0.5f);
+        Gun.SetActive(true);
         player.transform.LookAt(AIposition1);
         camera.GetComponent<MouseLook>().enabled = true;
         lookBool = false;

@@ -13,8 +13,9 @@ public class Controller : MonoBehaviour
     private float jumpheight = 1f;
     public LayerMask groundMask;
     Vector3 velocity;
-
-
+    public GameObject player;
+    public GameObject playercamera;
+    public GameObject UIRetry;
     bool isGrounded;
     void Start()
     {
@@ -95,5 +96,15 @@ public class Controller : MonoBehaviour
         }   
         velocity.y += gravity * Time.deltaTime;
         characterController.Move(velocity * Time.deltaTime);
+
+    }
+    private void OnTriggerEnter(Collider other) {
+        if(other.tag == "EnemyBullet"){
+            Debug.Log("Youve Been Shot By Seeker");
+            player.GetComponent<Controller>().enabled = false;
+            playercamera.GetComponent<MouseLook>().enabled = false;
+            UIRetry.SetActive(false);
+            player.SetActive(false);
+        }
     }
 }

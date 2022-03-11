@@ -12,6 +12,7 @@ public class EnemyAiTutorial : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
     public GameObject ScannerAttack;
     public GameObject ScannerFollow;
+    public GameObject WarningUI;
     public float health;
 
     //Patroling
@@ -48,7 +49,7 @@ public class EnemyAiTutorial : MonoBehaviour
     private void Patroling()
     {
         if (!walkPointSet) SearchWalkPoint();
-
+        WarningUI.SetActive(false);
         if (walkPointSet)
             agent.SetDestination(walkPoint);
 
@@ -60,6 +61,7 @@ public class EnemyAiTutorial : MonoBehaviour
     }
     private void SearchWalkPoint()
     {
+        WarningUI.SetActive(false);
         //Calculate random point in range
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
@@ -73,13 +75,14 @@ public class EnemyAiTutorial : MonoBehaviour
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
+        WarningUI.SetActive(true);
     }
 
     private void AttackPlayer()
     {
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
-
+        WarningUI.SetActive(true);
         transform.LookAt(player);
 
         if (!alreadyAttacked)

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AiEnemyHiderSpawns : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class AiEnemyHiderSpawns : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
     public GameObject ScannerFollow;
     public float health;
-
+    public GameObject WarningUI;
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -42,7 +43,21 @@ public class AiEnemyHiderSpawns : MonoBehaviour
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
     }
-
+    private void OnTriggerEnter(Collider other){
+        if(other.tag == "Player"){
+            WarningUI.SetActive(true);
+        }
+    }
+    private void OnTriggerExit(Collider other) {
+        if(other.tag == "Player"){
+            WarningUI.SetActive(false);
+        }
+    }
+    //DeleteHiderOrTaggedPlayer
+    
+    public void RestartTutorial(){
+        SceneManager.LoadScene("TutorialMode");
+    }
     private void Patroling()
     {
         if (!walkPointSet) SearchWalkPoint();
@@ -83,17 +98,6 @@ public class AiEnemyHiderSpawns : MonoBehaviour
     private void ResetAttack()
     {
         alreadyAttacked = false;
-    }
-
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
-    }
-    private void DestroyEnemy()
-    {
-        Destroy(gameObject);
     }
 
     private void OnDrawGizmosSelected()

@@ -9,4 +9,5 @@ public class BulletScript : MonoBehaviour
     {
         Destroy(bullet, 10);
     }
+    
 }
