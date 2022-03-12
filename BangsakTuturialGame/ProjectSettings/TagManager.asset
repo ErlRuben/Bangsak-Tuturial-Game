@@ -7,6 +7,9 @@ TagManager:
   - Bullet
   - Stick
   - EnemyBullet
+  - PlayerBodyForBullet
+  - EnemyTagger
+  - Seeker
   layers:
   - Default
   - TransparentFX
@@ -15,7 +18,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Seeker
   - 
   - 
   - 
