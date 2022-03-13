@@ -13,7 +13,6 @@ public class BangsakSeeker : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
     public GameObject ScannerAttack;
     public GameObject ScannerFollow;
-    public GameObject WarningUI;
     public float countAI = 1;
 
     //Patroling
@@ -51,7 +50,6 @@ public class BangsakSeeker : MonoBehaviour
     private void Patroling()
     {
         if (!walkPointSet) SearchWalkPoint();
-        WarningUI.SetActive(false);
         if (walkPointSet)
             agent.SetDestination(walkPoint);
 
@@ -63,7 +61,6 @@ public class BangsakSeeker : MonoBehaviour
     }
     private void SearchWalkPoint()
     {
-        WarningUI.SetActive(false);
         //Calculate random point in range
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
@@ -77,16 +74,14 @@ public class BangsakSeeker : MonoBehaviour
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
-        WarningUI.SetActive(true);
+
     }
 
     private void AttackPlayer()
     {
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
-        WarningUI.SetActive(true);
-        var target = GameObject.FindWithTag("Player").transform;
-        transform.LookAt(target);
+        
 
         if (!alreadyAttacked)
         {
