@@ -11,6 +11,7 @@ public class BangsakDamageSeeker : MonoBehaviour
     public Text CountUI;
     public float countHider = 0;
     public GameObject NoHiderLeft;
+
     void Start(){
         Cursor.lockState = CursorLockMode.Locked;
         AISeeker.GetComponent<BangsakHider>().enabled = true;
@@ -18,6 +19,7 @@ public class BangsakDamageSeeker : MonoBehaviour
     void Update(){
         float f1 = float.Parse(CountUI.text);
         countHider = f1;
+
     }
     public void OnTriggerEnter(Collider other) {
         if(other.tag == "EnemyBullet"){
@@ -34,5 +36,6 @@ public class BangsakDamageSeeker : MonoBehaviour
                 PlayerCamera.GetComponent<MouseLook>().enabled = false;
             }
         }
+
     }
 }

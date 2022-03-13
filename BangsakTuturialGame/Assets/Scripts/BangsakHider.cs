@@ -33,6 +33,7 @@ public class BangsakHider : MonoBehaviour
     {
         player = GameObject.Find("Character").transform;
         agent = GetComponent<NavMeshAgent>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()

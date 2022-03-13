@@ -32,7 +32,7 @@ public class BangsakSeeker : MonoBehaviour
     private void Awake()
     {
         player = GameObject.Find("Character").transform;
-
+        Cursor.lockState = CursorLockMode.Locked;
         agent = GetComponent<NavMeshAgent>();
     }
 

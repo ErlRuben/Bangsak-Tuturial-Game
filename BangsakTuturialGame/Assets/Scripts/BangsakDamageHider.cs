@@ -29,6 +29,9 @@ public class BangsakDamageHider : MonoBehaviour
     void Update(){
         float f1 = float.Parse(CountUI.text);
         countHider = f1;
+
+        float f2 = float.Parse(CountUISeeker.text);
+        countSeeker = f2;
     }
     public void OnTriggerEnter(Collider other) {
         if(other.tag == "Bullet"){
