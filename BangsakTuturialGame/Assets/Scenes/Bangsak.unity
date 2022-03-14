@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.53033906, g: 0.5694925, b: 0.5380608, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9413,6 +9413,7 @@ MonoBehaviour:
   CountUISeeker: {fileID: 1476727968}
   countSeeker: 0
   NoSeekerLeft: {fileID: 1157959067}
+  GameChecker: {fileID: 0}
   isDown: 0
 --- !u!136 &398461256
 CapsuleCollider:
@@ -10123,6 +10124,7 @@ MonoBehaviour:
   UIRetry: {fileID: 1578268864}
   WarningUI: {fileID: 904078515}
   BulletScript: {fileID: 1064217145}
+  GameChecker: {fileID: 1500660813}
   CountUI: {fileID: 770625518}
   countHider: 5
   NoHiderLeft: {fileID: 690837086}
@@ -13981,7 +13983,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &580554474
 Transform:
   m_ObjectHideFlags: 0
@@ -29960,7 +29962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1178502656
 Transform:
   m_ObjectHideFlags: 0
@@ -31767,6 +31769,7 @@ MonoBehaviour:
   UIRetry: {fileID: 1578268864}
   WarningUI: {fileID: 904078515}
   BulletScript: {fileID: 1064217145}
+  GameChecker: {fileID: 1500660813}
   CountUI: {fileID: 770625518}
   countHider: 5
   NoHiderLeft: {fileID: 690837086}
@@ -39353,6 +39356,68 @@ Transform:
   m_Father: {fileID: 31213357}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1500660812
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4970607016292791512, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970607016292791512, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 52.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970607016292791512, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970607016292791512, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 87.50822
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970607016292791512, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970607016292791512, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970607016292791512, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970607016292791512, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970607016292791512, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970607016292791512, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970607016292791512, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378099938894327477, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+      propertyPath: m_Name
+      value: Save_LoadData
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+--- !u!1 &1500660813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6378099938894327477, guid: 294a30eeaccf18a429d93bdcae6bf5d7, type: 3}
+  m_PrefabInstance: {fileID: 1500660812}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1501613950
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39659,6 +39724,7 @@ GameObject:
   - component: {fileID: 1511270651}
   - component: {fileID: 1511270650}
   - component: {fileID: 1511270654}
+  - component: {fileID: 1511270655}
   m_Layer: 3
   m_Name: Camera
   m_TagString: Untagged
@@ -39762,6 +39828,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401ce9e72c4661045adcaaa65bcfd00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1511270655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511270649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 719116396ecccbb4aabb9363635e4d64, type: 2}
 --- !u!1 &1515843887
 GameObject:
   m_ObjectHideFlags: 0
@@ -42089,6 +42168,7 @@ MonoBehaviour:
   UIRetry: {fileID: 1578268864}
   WarningUI: {fileID: 904078515}
   BulletScript: {fileID: 1064217145}
+  GameChecker: {fileID: 1500660813}
   CountUI: {fileID: 770625518}
   countHider: 5
   NoHiderLeft: {fileID: 690837086}
@@ -57018,6 +57098,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2574302232781753833, guid: 3866d8fe08aae9c41a92d10fc817f2c3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2574302233204760477, guid: 3866d8fe08aae9c41a92d10fc817f2c3, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -57387,6 +57471,7 @@ MonoBehaviour:
   UIRetry: {fileID: 1578268864}
   WarningUI: {fileID: 904078515}
   BulletScript: {fileID: 1064217145}
+  GameChecker: {fileID: 1500660813}
   CountUI: {fileID: 770625518}
   countHider: 5
   NoHiderLeft: {fileID: 690837086}

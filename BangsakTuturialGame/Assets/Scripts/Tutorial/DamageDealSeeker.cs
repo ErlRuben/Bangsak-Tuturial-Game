@@ -14,6 +14,7 @@ public class DamageDealSeeker : MonoBehaviour
     public GameObject UIText;
     public GameObject WarningUI;
     public GameObject StickDisable;
+    public GameObject GameChecker;
     public void OnTriggerEnter(Collider other) {
         if(other.tag == "Stick"){
             PlayerCharacter.transform.position = LocationNew.transform.position;
@@ -22,6 +23,7 @@ public class DamageDealSeeker : MonoBehaviour
             PlayerCharacter.GetComponent<Controller>().enabled = false;
             PlayerCamera.GetComponent<MouseLook>().enabled = false;
             Cursor.lockState = CursorLockMode.None;
+            GameChecker.GetComponent<SaveData>().DoneGames();
             AISeeker.SetActive(false);
             WarningUI.SetActive(false);
             UIText.SetActive(true);

@@ -55,4 +55,7 @@ public class MainMenuScript : MonoBehaviour
     public void DoneBangsak(){
         SceneManager.LoadScene("Patintero");
     }
+    public void EndGame(){
+        SceneManager.LoadScene("EndGame");
+    }
 }

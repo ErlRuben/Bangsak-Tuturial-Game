@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bangsak.unity
     guid: deb49ff759e0ea34aa087ba511c809ca
+  - enabled: 1
+    path: Assets/Scenes/Patintero.unity
+    guid: a7996642736f3094a92ff1965e65f7c0
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: 6d7af615a0a0776408d7d650c771c7a8
   m_configObjects: {}
