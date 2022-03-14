@@ -12,6 +12,7 @@ public class EnemyAiTutorial : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
     public GameObject ScannerAttack;
     public GameObject ScannerFollow;
+
     public GameObject WarningUI;
     public float health;
 
@@ -84,7 +85,6 @@ public class EnemyAiTutorial : MonoBehaviour
         agent.SetDestination(transform.position);
         WarningUI.SetActive(true);
         transform.LookAt(player);
-
         if (!alreadyAttacked)
         {
             ///Attack code here
@@ -95,6 +95,7 @@ public class EnemyAiTutorial : MonoBehaviour
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
+           
         }
     }
     private void ResetAttack()

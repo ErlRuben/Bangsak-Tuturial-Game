@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.53033906, g: 0.5694925, b: 0.5380608, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -53198,6 +53198,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1414031797}
     m_Modifications:
     - target: {fileID: 1327799933811576768, guid: 84b3d901dab7caf43821cf3c102522b4, type: 3}
+      propertyPath: UIOpen
+      value: 
+      objectReference: {fileID: 1958095107}
+    - target: {fileID: 1327799933811576768, guid: 84b3d901dab7caf43821cf3c102522b4, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 692548643}
@@ -53256,6 +53260,10 @@ PrefabInstance:
     - target: {fileID: 1327799933811576772, guid: 84b3d901dab7caf43821cf3c102522b4, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327799933811576772, guid: 84b3d901dab7caf43821cf3c102522b4, type: 3}
+      propertyPath: m_TagString
+      value: Seeker
       objectReference: {fileID: 0}
     - target: {fileID: 1327799934340549464, guid: 84b3d901dab7caf43821cf3c102522b4, type: 3}
       propertyPath: UIText
@@ -53559,6 +53567,10 @@ PrefabInstance:
     - target: {fileID: 2574302233204760483, guid: 3866d8fe08aae9c41a92d10fc817f2c3, type: 3}
       propertyPath: m_Name
       value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420672948455069089, guid: 3866d8fe08aae9c41a92d10fc817f2c3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3866d8fe08aae9c41a92d10fc817f2c3, type: 3}
