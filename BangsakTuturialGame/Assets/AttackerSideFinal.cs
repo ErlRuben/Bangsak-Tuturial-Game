@@ -7,11 +7,13 @@ public class AttackerSideFinal : MonoBehaviour
     public GameObject PlayerCharacter;
     public GameObject PlayerCamera;
     public GameObject ChangeSideUI;
+    public GameObject AIDisable;
     public GameObject GameChecker;
     private void OnTriggerEnter(Collider other) {
         if(other.tag == "Attackers"){
             PlayerCharacter.GetComponent<Controller>().enabled = false;
             PlayerCamera.GetComponent<MouseLook>().enabled = false;
+            AIDisable.SetActive(false);
             ChangeSideUI.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             GameChecker.GetComponent<SaveData>().DoneGames();

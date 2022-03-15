@@ -940,6 +940,7 @@ MonoBehaviour:
   PlayerCharacter: {fileID: 2574302233235750507}
   PlayerCamera: {fileID: 2574302232880835618}
   ChangeSideUI: {fileID: 690837086}
+  AIDisable: {fileID: 1617797026}
   GameChecker: {fileID: 1018371053}
 --- !u!1 &22408510
 GameObject:
@@ -9153,7 +9154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &293659351
 Transform:
   m_ObjectHideFlags: 0
@@ -15235,6 +15236,7 @@ MonoBehaviour:
   PlayerCharacter: {fileID: 2574302233235750507}
   PlayerCamera: {fileID: 2574302232880835618}
   ChangeSideUI: {fileID: 1157959067}
+  AIDisable: {fileID: 0}
   GameChecker: {fileID: 1018371053}
 --- !u!1 &532658422
 GameObject:
@@ -21774,7 +21776,8 @@ MonoBehaviour:
   PlayerCharacter: {fileID: 2574302233235750507}
   PlayerCamera: {fileID: 2574302232880835618}
   ChangeSideUI: {fileID: 690837086}
-  GameChecker: {fileID: 0}
+  AIDisable: {fileID: 1307466311}
+  GameChecker: {fileID: 1018371053}
 --- !u!136 &725702061
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32579,7 +32582,8 @@ MonoBehaviour:
   PlayerCharacter: {fileID: 2574302233235750507}
   PlayerCamera: {fileID: 2574302232880835618}
   ChangeSideUI: {fileID: 690837086}
-  GameChecker: {fileID: 0}
+  AIDisable: {fileID: 1407291527}
+  GameChecker: {fileID: 1018371053}
 --- !u!136 &1128755000
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -53147,7 +53151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1706728687
 Transform:
   m_ObjectHideFlags: 0
@@ -54466,7 +54470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1760628872
 Transform:
   m_ObjectHideFlags: 0
@@ -60990,7 +60994,8 @@ MonoBehaviour:
   PlayerCharacter: {fileID: 2574302233235750507}
   PlayerCamera: {fileID: 2574302232880835618}
   ChangeSideUI: {fileID: 690837086}
-  GameChecker: {fileID: 0}
+  AIDisable: {fileID: 1471401715}
+  GameChecker: {fileID: 1018371053}
 --- !u!136 &2011912675
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -63162,7 +63167,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2080596437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -64704,7 +64709,8 @@ MonoBehaviour:
   PlayerCharacter: {fileID: 2574302233235750507}
   PlayerCamera: {fileID: 2574302232880835618}
   ChangeSideUI: {fileID: 690837086}
-  GameChecker: {fileID: 0}
+  AIDisable: {fileID: 1348074038}
+  GameChecker: {fileID: 1018371053}
 --- !u!136 &2130576380
 CapsuleCollider:
   m_ObjectHideFlags: 0
