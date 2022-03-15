@@ -14671,7 +14671,6 @@ Transform:
   m_LocalScale: {x: 0.1387964, y: 0.15355982, z: 0.122910045}
   m_Children:
   - {fileID: 1674403466}
-  - {fileID: 655396046}
   m_Father: {fileID: 1709335873}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -3.247, y: 180.809, z: -2.122}
@@ -16335,51 +16334,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654685932}
   m_CullTransparentMesh: 1
---- !u!1 &655396045
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 655396046}
-  - component: {fileID: 655396047}
-  m_Layer: 0
-  m_Name: SpawnBullet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &655396046
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655396045}
-  m_LocalRotation: {x: 0.00020936255, y: 0.9946785, z: 0.0095399115, w: -0.10258457}
-  m_LocalPosition: {x: -0.049995765, y: 1.3300005, z: -2.6099777}
-  m_LocalScale: {x: -1.3234996, y: 1, z: -5.2457}
-  m_Children: []
-  m_Father: {fileID: 591163155}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -1.084, y: 179.665, z: 0.142}
---- !u!114 &655396047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655396045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c388e2b66b7d7954bb6595038d6910c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 8059960568608770359, guid: 6a493ec443fdf3549822a2260c8fe8a3, type: 3}
-  bulletspawn: {fileID: 655396045}
 --- !u!1 &658594783
 GameObject:
   m_ObjectHideFlags: 0

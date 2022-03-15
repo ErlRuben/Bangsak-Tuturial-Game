@@ -29,6 +29,7 @@ public class DamageDealSeeker : MonoBehaviour
             GameChecker.GetComponent<SaveData>().DoneGames();
             AISeeker.SetActive(false);
             WarningUI.SetActive(false);
+            Destroy(AISeeker);
             Destroy(WarningUI);
         }
     }

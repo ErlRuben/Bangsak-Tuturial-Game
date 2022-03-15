@@ -114,7 +114,7 @@ MonoBehaviour:
     m_Settings:
       tonemapping:
         tonemapper: 2
-        neutralBlackIn: 0.0541
+        neutralBlackIn: -0.0044
         neutralWhiteIn: 12.34
         neutralBlackOut: 0
         neutralWhiteOut: 10
