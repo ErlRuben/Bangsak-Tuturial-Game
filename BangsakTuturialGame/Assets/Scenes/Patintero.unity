@@ -9153,7 +9153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &293659351
 Transform:
   m_ObjectHideFlags: 0
@@ -12777,7 +12777,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -23971,7 +23971,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.50000024
-  m_Speed: 2.21
+  m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120.42
@@ -34716,7 +34716,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.50000024
-  m_Speed: 2.21
+  m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120.42
@@ -39071,7 +39071,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.50000024
-  m_Speed: 2.21
+  m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120.42
@@ -40134,7 +40134,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.50000024
-  m_Speed: 0.4
+  m_Speed: 3.4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120.42
@@ -40974,7 +40974,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.50000024
-  m_Speed: 2.21
+  m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120.42
@@ -41773,7 +41773,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.50000024
-  m_Speed: 0.45
+  m_Speed: 3.4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120.42
@@ -41811,8 +41811,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82d85c61c5e4aef4c80231ded831b70d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WayPoint2: {fileID: 226630661}
-  WayPoint3: {fileID: 2081901885}
+  WayPoint2: {fileID: 2081901885}
+  WayPoint3: {fileID: 226630661}
   DefenderNavMesh: {fileID: 1348074040}
   DefenderAI: {fileID: 1348074039}
   DefenderArmsAttack: {fileID: 834227973}
@@ -44434,7 +44434,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.50000024
-  m_Speed: 0.4
+  m_Speed: 3.4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120.42
@@ -46158,7 +46158,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.50000024
-  m_Speed: 0.4
+  m_Speed: 3.4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120.42
@@ -46690,7 +46690,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.50000024
-  m_Speed: 2.21
+  m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120.42
@@ -50249,7 +50249,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.50000024
-  m_Speed: 0.4
+  m_Speed: 3.4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120.42
@@ -53147,7 +53147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1706728687
 Transform:
   m_ObjectHideFlags: 0
@@ -54466,7 +54466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1760628872
 Transform:
   m_ObjectHideFlags: 0
@@ -63162,7 +63162,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2080596437
 RectTransform:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class DefenderScript : MonoBehaviour
     public Transform DefenderAI;
     public GameObject DefenderArmsAttack, DefenderArmsNeutral;
     public bool Way1 = false;
-    public float timeroam = 6f;
+    public float timeroam = 1.5f;
     public bool Attacker1=false;
     //public GameObject DefenderAI;
     void Start()
@@ -23,7 +23,7 @@ public class DefenderScript : MonoBehaviour
         PatrolAI();
     }
     void PatrolAI(){
-        timeroam = 6f;
+        timeroam = 1.5f;
         SeenAttacker();
         if(Way1 == false){
             StartCoroutine(WaitToWalk());
@@ -39,7 +39,7 @@ public class DefenderScript : MonoBehaviour
             DefenderAI.LookAt(target);
             DefenderArmsAttack.SetActive(true);
             DefenderArmsNeutral.SetActive(false);
-            timeroam = 1f;
+            timeroam = 1.5f;
         }
     }
     private void OnTriggerEnter(Collider other) {
